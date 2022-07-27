@@ -10,3 +10,6 @@ scanf("%d",&c);
 if(c==0){
     printf("The addition of the gven two operands is %f",a+b);
 }
+if(c==1){
+    printf("The subtraction of the given two operands is %f",a-b);
+}
