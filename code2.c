@@ -124,3 +124,10 @@ int partition(int array[], int low, int high) {
   swap(&array[i + 1], &array[high]);
   return (i + 1);
 }
+void quickSort(int array[], int low, int high) {
+  if (low < high) {
+    int pi = partition(array, low, high);
+    quickSort(array, low, pi - 1);
+    quickSort(array, pi + 1, high);
+  }
+}
