@@ -16,3 +16,6 @@ if(c==1){
 if(c==2){
     printf("The multiplication of the given two operands is %f",a*b);
 }
+if(c==3){
+    printf("The division of the given two operands is %f",a/b);
+}
