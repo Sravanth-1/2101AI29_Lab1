@@ -24,3 +24,10 @@ void selectionSort(int arr[], int n)
         swap(&arr[min_idx], &arr[i]);
     }
 }
+void printArray(int arr[], int size)
+{
+    int i;
+    for (i=0; i < size; i++)
+        printf("%d ", arr[i]);
+    printf("\n");
+}
