@@ -13,3 +13,6 @@ if(c==0){
 if(c==1){
     printf("The subtraction of the given two operands is %f",a-b);
 }
+if(c==2){
+    printf("The multiplication of the given two operands is %f",a*b);
+}
