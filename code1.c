@@ -19,3 +19,5 @@ if(c==2){
 if(c==3){
     printf("The division of the given two operands is %f",a/b);
 }
+return 0;
+}
