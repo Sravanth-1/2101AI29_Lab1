@@ -131,3 +131,4 @@ void quickSort(int array[], int low, int high) {
     quickSort(array, pi + 1, high);
   }
 }
+int main()
