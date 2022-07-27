@@ -97,3 +97,30 @@ void merge(int arr[], int l, int m, int r)
         k++;
     }
 }
+void mergeSort(int arr[], int l, int r)
+{
+    if (l < r) {
+
+        int m = l + (r - l) / 2;
+
+
+        mergeSort(arr, l, m);
+        mergeSort(arr, m + 1, r);
+
+        merge(arr, l, m, r);
+    }
+}
+int partition(int array[], int low, int high) {
+
+
+  int pivot = array[high];
+  int i = (low - 1);
+  for (int j = low; j < high; j++) {
+    if (array[j] <= pivot) {
+      i++;
+      swap(&array[i], &array[j]);
+    }
+  }
+  swap(&array[i + 1], &array[high]);
+  return (i + 1);
+}
